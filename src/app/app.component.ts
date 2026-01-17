@@ -23,4 +23,12 @@ export class AppComponent {
   title = 'one-way';
 
   constructor(public popupService: PopupService) {}
+
+  ngOnInit() {
+    setTimeout(() => {
+      if (!this.popupService.isOpen()) {
+        this.popupService.open();
+      }
+    }, 10000);
+  }
 }
