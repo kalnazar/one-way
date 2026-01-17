@@ -35,6 +35,9 @@
   border-radius: 50%;
   z-index: 10;
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     background: hsla(358, 79%, 50%, 1);
   }
@@ -152,7 +155,7 @@ h1 {
 
     input {
       padding: 20px 20px 20px 35px;
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 
