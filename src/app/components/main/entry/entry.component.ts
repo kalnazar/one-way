@@ -26,7 +26,6 @@ export class EntryComponent implements OnInit {
     const elements = document.querySelectorAll('.entry__rectangles .rectangle');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
         } else {

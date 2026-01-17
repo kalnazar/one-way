@@ -1,3 +1,5 @@
 <app-header></app-header>
 <app-main></app-main>
 <app-footer></app-footer>
+@if (popupService.isOpen()) {
+<app-popup-menu (close)="popupService.close()"></app-popup-menu>}

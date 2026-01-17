@@ -1,0 +1,43 @@
+<div class="popup-overlay" (click)="onClose()" @fadeSlide>
+  <div class="popup-container" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="onClose()">&times;</button>
+
+    <div class="content">
+      <div class="popup-box"></div>
+
+      <div class="popup-form-section">
+        <h1>Заполните форму и мы свяжемся с вами в течение 10-ти минут</h1>
+
+        <form class="lead-form">
+          <div class="input-group">
+            <span class="icon">👤</span>
+            <input type="text" placeholder="ВАШЕ ИМЯ" />
+          </div>
+
+          <div class="input-group">
+            <span class="text-gray icon">📞</span>
+            <input
+              class="text-gray"
+              type="tel"
+              placeholder="ВАШ НОМЕР ТЕЛЕФОНА"
+            />
+          </div>
+
+          <button class="btn">
+            Рассчитать проект и получить прототип сайта в подарок
+          </button>
+
+          <label class="checkbox" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <p>
+              Я согласен с
+              <a class="text-blue" href="#policy-agreement"
+                >политикой конфиденциальности</a
+              >
+            </p>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
